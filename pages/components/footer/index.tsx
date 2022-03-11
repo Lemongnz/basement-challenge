@@ -1,10 +1,11 @@
-// import Image from "next/image";
+import Image from "next/image";
+
+import footer from "../../../public/footer.svg";
 
 export default function Footer() {
   return (
     <div>
-      hola salvaje
-      {/* <Image alt="footer" src="../../../public/products/footer.svg" /> */}
+      <Image alt="footer" src={footer} />
     </div>
   );
 }
