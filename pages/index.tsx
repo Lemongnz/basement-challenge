@@ -1,15 +1,14 @@
-import type {NextPage} from "next";
-import Image from "next/image";
-
-import logo from "../public/logo.svg";
+import type { NextPage } from "next";
+import Nav from "./components/nav/nav";
 
 const Home: NextPage = () => {
   return (
-    <div className="h-full flex bg-black">
+    <div className="flex flex-col bg-black index ">
       <header className="m-auto text-white text-center">
-        <Image alt="Basement" src={logo} />
-        <h4>Lets get this party started</h4>
+        <Nav></Nav>
       </header>
+      <div>Header</div>
+      <div>Grid</div>
     </div>
   );
 };

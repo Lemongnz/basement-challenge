@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
+import type { NextComponentType } from "next";
 
-const Nav: NextPage = () => {
-  return <div className="">NAV</div>;
+const Nav: NextComponentType = () => {
+  return <div className="container">NAV</div>;
 };
 
 export default Nav;
