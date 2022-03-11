@@ -3,7 +3,7 @@ import type {NextPage} from "next";
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import GridProdcts from "./components/grid-products";
+import GridProducts from "./components/grid-products";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
         <Nav />
       </header>
       <Header />
-      <GridProdcts />
+      <GridProducts />
       <Footer />
     </div>
   );
