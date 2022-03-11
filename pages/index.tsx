@@ -3,6 +3,8 @@ import Image from "next/image";
 
 import logo from "../public/logo.svg";
 
+import Footer from "./components/footer";
+
 const Home: NextPage = () => {
   return (
     <div className="h-full flex bg-black">
@@ -10,6 +12,7 @@ const Home: NextPage = () => {
         <Image alt="Basement" src={logo} />
         <h4>Lets get this party started</h4>
       </header>
+      <Footer />
     </div>
   );
 };
