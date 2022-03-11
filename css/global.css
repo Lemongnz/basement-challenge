@@ -30,4 +30,5 @@ a {
 #index {
   max-width: 1400px;
   margin: auto;
+  overflow: hidden;
 }
