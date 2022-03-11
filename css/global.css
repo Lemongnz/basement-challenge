@@ -13,8 +13,9 @@ body,
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: 'Basement Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Basement Grotesque", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 a {
@@ -24,4 +25,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+#index {
+  max-width: 1400px;
+  margin: auto;
 }

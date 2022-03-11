@@ -5,8 +5,8 @@ import Footer from "./components/footer";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col bg-black index">
-      <header className="m-auto text-white text-center">
+    <div id="index" className="flex flex-col bg-black index">
+      <header>
         <Nav></Nav>
       </header>
       <div>Header</div>

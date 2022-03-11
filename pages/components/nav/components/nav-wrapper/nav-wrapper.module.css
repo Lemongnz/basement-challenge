@@ -1,0 +1,11 @@
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 1376px;
+  height: 48px;
+  margin: auto;
+  margin-top: 33px;
+}
