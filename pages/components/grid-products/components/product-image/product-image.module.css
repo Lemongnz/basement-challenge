@@ -1,5 +1,5 @@
 .imageWrapper {
-  width: 440px;
+  max-width: 440px;
   background-color: #151515;
   background-image: linear-gradient(180deg, #000 0%, #1D1D1D 100%);
   border-bottom: 2px solid #fff;
