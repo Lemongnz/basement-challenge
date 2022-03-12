@@ -1,17 +1,19 @@
-import type { NextPage } from "next";
+import type {NextPage} from "next";
 
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import GridProducts from "./components/grid-products";
+import CarouselText from "./components/carousel-text";
 
 const Home: NextPage = () => {
   return (
-    <div id="index" className="flex flex-col bg-black index">
+    <div className="flex flex-col bg-black index" id="index">
       <header>
-        <Nav></Nav>
+        <Nav />
       </header>
       <Header />
+      <CarouselText />
       <GridProducts />
       <Footer />
     </div>

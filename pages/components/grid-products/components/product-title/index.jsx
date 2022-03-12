@@ -13,9 +13,9 @@ const product = {
 
 export default function ProductTitle() {
   return (
-    <div>
+    <div className="flex flex-row justify-around text-xl">
       <span>{product.name}</span>
-      <span>{product.price}</span>
+      <span>$ {product.price}</span>
     </div>
   );
 }
