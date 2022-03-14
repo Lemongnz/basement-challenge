@@ -1,12 +1,7 @@
 .imageWrapper {
-  max-width: 440px;
   background-color: #151515;
   background-image: linear-gradient(180deg, #000 0%, #1D1D1D 100%);
-  border-bottom: 2px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  border-bottom: 2px solid #fff;  
 }
 
 .image {

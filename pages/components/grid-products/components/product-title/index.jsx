@@ -13,7 +13,7 @@ const product = {
 
 export default function ProductTitle() {
   return (
-    <div className="flex flex-row justify-around text-xl">
+    <div className="flex flex-row justify-between text-xl">
       <span>{product.name}</span>
       <span>$ {product.price}</span>
     </div>
