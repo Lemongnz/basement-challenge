@@ -13,8 +13,8 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <NextScript />
           <div id="main-root" />
+          <NextScript />
         </body>
       </Html>
     );
