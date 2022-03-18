@@ -1,5 +1,5 @@
 .wrapper {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   display: flex;
   flex-direction: row;
   padding: 4px;
@@ -58,13 +58,13 @@
 .quantitydiv {
   display: flex;
   flex-direction: row;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 15px;
   padding: 0 8px;
 }
 
 .quantitydiv span{
-  margin: 0 4px;
+  margin: 0 6px;
 }
 
 .size {
@@ -81,5 +81,9 @@
 }
 
 .focus {
-  border: 2px solid white;
+  border: 1px solid white;
+}
+
+.amout {
+  font-size: 30px;
 }
