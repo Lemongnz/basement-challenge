@@ -1,4 +1,9 @@
-export type OptionValues = "S" | "M" | "L" | "XL";
+export enum OptionValues {
+  S = "S",
+  M = "M",
+  L = "L",
+  XL = "XL",
+}
 
 export interface IProduct {
   id: string;
