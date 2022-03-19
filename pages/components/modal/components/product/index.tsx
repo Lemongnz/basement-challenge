@@ -4,7 +4,11 @@ import product from "../../../../../public/products/hoodie.png";
 
 import style from "./modalProduct.module.css";
 
+import { OptionValues } from "../../../../types/product.type";
+
 export default function ModalProduct() {
+  const sizes: string[] = Object.values(OptionValues);
+
   return (
     <div className={style.wrapper}>
       <div className={style.hoodie}>
@@ -27,6 +31,7 @@ export default function ModalProduct() {
             </div>
             <div className={style.size}>
               <h1>SIZE:</h1>
+<<<<<<< HEAD
               <button className={style.focus}>
                 <p>S</p>
               </button>
@@ -39,6 +44,13 @@ export default function ModalProduct() {
               <button>
                 <p>XL</p>
               </button>
+=======
+              {sizes.map((size) => (
+                <button>
+                  <p>{size}</p>
+                </button>
+              ))}
+>>>>>>> 4d00bde4f6dacc8c7dd4d8bf0abb7093f591bd6a
             </div>
           </div>
           <div className={style.amout}>$12.50</div>
