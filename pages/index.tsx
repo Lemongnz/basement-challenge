@@ -1,16 +1,22 @@
-import type {NextPage} from "next";
-
-import {store} from "../store";
+import type { NextPage } from "next";
 
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import GridProducts from "./components/grid-products";
 import CarouselText from "./components/carousel-text";
+import { useState } from "react";
+import { IProduct } from "./types/product.type";
+import productsService from "./services/products.service";
 
 const Home: NextPage = () => {
-  store.subscribe(() => {
-    console.log(store.getState());
+  const [products, setProducts] = useState([] as IProduct[]);
+
+  productsService.getAll().then((responseProducts: IProduct[]) => {
+    if (!products?.length) {
+      // Hay que averiguar o preguntar para sacar esta linea sin que entre en bucle
+      setProducts(responseProducts);
+    }
   });
 
   return (
@@ -20,8 +26,7 @@ const Home: NextPage = () => {
       </header>
       <Header />
       <CarouselText />
-      <GridProducts />
-
+      <GridProducts products={products} />
       <Footer />
     </div>
   );

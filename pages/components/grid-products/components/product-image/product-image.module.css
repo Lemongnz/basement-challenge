@@ -1,9 +1,10 @@
 .imageWrapper {
   background-color: #151515;
-  background-image: linear-gradient(180deg, #000 0%, #1D1D1D 100%);
-  border-bottom: 2px solid #fff;  
+  background-image: linear-gradient(180deg, #000 0%, #1d1d1d 100%);
+  border-bottom: 2px solid #fff;
+  width: 100%;
 }
 
 .photo {
-  width: 80%;
+  /* width: 80%; */
 }

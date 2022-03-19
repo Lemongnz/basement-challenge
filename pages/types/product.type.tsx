@@ -11,6 +11,8 @@ export interface IProduct {
   price: number;
   name: string;
   options: IProductOption[];
+
+  total?: number;
 }
 
 interface IProductOption {
