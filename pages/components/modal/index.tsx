@@ -19,7 +19,6 @@ export default function Modal({onClose}: any) {
         </button>
         <ModalHeader />
         <ModalProduct />
-        <ModalProduct />
       </div>
       <ModalFooter />
     </div>,

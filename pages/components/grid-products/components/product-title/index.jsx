@@ -1,3 +1,5 @@
+import style from "./product-title.module.css";
+
 const product = {
   id: "black-tshirt",
   image: "/products/shirt.png",
@@ -13,9 +15,9 @@ const product = {
 
 export default function ProductTitle() {
   return (
-    <div className="flex flex-row justify-between text-xl">
-      <span>{product.name}</span>
-      <span>$ {product.price}</span>
+    <div className="flex flex-row justify-between">
+      <span className={style.text}>{product.name}</span>
+      <span className={style.text}>$ {product.price}</span>
     </div>
   );
 }

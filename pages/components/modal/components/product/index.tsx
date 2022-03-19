@@ -27,10 +27,10 @@ export default function ModalProduct() {
             </div>
             <div className={style.size}>
               <h1>SIZE:</h1>
-              <button>
+              <button className={style.focus}>
                 <p>S</p>
               </button>
-              <button className={style.focus}>
+              <button>
                 <p>M</p>
               </button>
               <button>

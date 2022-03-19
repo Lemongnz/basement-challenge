@@ -6,8 +6,8 @@ import style from "./product-image.module.css";
 
 export default function ProductImage() {
   return (
-    <div className={style.imageWrapper}>
+    <button className={style.imageWrapper}>
       <Image alt="product" className={style.image} src={product} />
-    </div>
+    </button>
   );
 }

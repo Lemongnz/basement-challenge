@@ -10,6 +10,7 @@
     "api-start": "json-server --watch ./product/mock.json --port 3001"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.0",
     "@types/react-dom": "^17.0.13",
     "axios": "^0.26.1",
     "next": "11.1.0",
