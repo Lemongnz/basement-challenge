@@ -1,19 +1,27 @@
 import Image from "next/image";
+import {useState} from "react";
 
-import product from "../../../../../public/products/hoodie.png";
+import pepe from "../../../../../public/products/hoodie.png";
+import {store} from "../../../../../store";
+import {OptionValues} from "../../../../types/product.type";
 
 import style from "./modalProduct.module.css";
 
-import { OptionValues } from "../../../../types/product.type";
-
 export default function ModalProduct() {
   const sizes: string[] = Object.values(OptionValues);
+  const [products, setProductsCart] = useState([]);
+
+  store.subscribe(() => {
+    console.log(store.getState());
+    setProductsCart(store.getState());
+  });
 
   return (
     <div className={style.wrapper}>
       <div className={style.hoodie}>
-        <Image alt="close" className={style.photo} src={product} />
+        <Image alt="close" className={style.photo} src={pepe} />
       </div>
+      {products}
       <div className={style.text}>
         <div className={style.topside}>
           <h3>BLACK T-SHIRT</h3>
@@ -31,26 +39,11 @@ export default function ModalProduct() {
             </div>
             <div className={style.size}>
               <h1>SIZE:</h1>
-<<<<<<< HEAD
-              <button className={style.focus}>
-                <p>S</p>
-              </button>
-              <button>
-                <p>M</p>
-              </button>
-              <button>
-                <p>L</p>
-              </button>
-              <button>
-                <p>XL</p>
-              </button>
-=======
               {sizes.map((size) => (
-                <button>
+                <button key={size}>
                   <p>{size}</p>
                 </button>
               ))}
->>>>>>> 4d00bde4f6dacc8c7dd4d8bf0abb7093f591bd6a
             </div>
           </div>
           <div className={style.amout}>$12.50</div>
