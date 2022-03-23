@@ -15,12 +15,16 @@ export default function ModalFooter({products}: IProductsCartParams) {
     return total.toFixed(2);
   };
 
+  const onCheckout = () => {
+    console.table(products);
+  };
+
   return (
     <div className={style.wrapper}>
       <div className={style.left}>
         <p>TOTAL: ${getTotal()}</p>
       </div>
-      <button className={style.right}>
+      <button className={style.right} onClick={onCheckout}>
         <Image alt="close" src={check} />
       </button>
     </div>

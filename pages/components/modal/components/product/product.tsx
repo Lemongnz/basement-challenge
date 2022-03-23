@@ -1,8 +1,8 @@
 import Image from "next/image";
 import {useDispatch} from "react-redux";
 
-import {decrementProduct, incrementProduct} from "../../../../reducers/product";
-import {IProductCartParams} from "../../../../types/product.type";
+import {changeSizeProduct, decrementProduct, incrementProduct} from "../../../../reducers/product";
+import {IProductCartParams, OptionValues} from "../../../../types/product.type";
 
 import style from "./product.module.css";
 
@@ -15,6 +15,10 @@ export default function Product({product}: IProductCartParams) {
 
   const onDerementProduct = () => {
     dispatch(decrementProduct(product));
+  };
+
+  const onChangeSize = (size: OptionValues) => {
+    dispatch(changeSizeProduct(product, size));
   };
 
   return (
@@ -41,7 +45,11 @@ export default function Product({product}: IProductCartParams) {
             <div className={style.size}>
               <h1>SIZE:</h1>
               {product.options[0].values.map((size) => (
-                <button key={size}>
+                <button
+                  key={size}
+                  className={product.size === size ? style.selected : ""}
+                  onClick={() => onChangeSize(size)}
+                >
                   <p>{size}</p>
                 </button>
               ))}

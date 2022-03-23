@@ -1,5 +1,5 @@
 import {IActionStore} from "../types/acttionStore.type";
-import {IProduct, IProductCart} from "../types/product.type";
+import {IProduct, IProductCart, OptionValues} from "../types/product.type";
 
 export const productReducer = (state = [], action: IActionStore) => {
   switch (action.type) {
@@ -18,6 +18,10 @@ export const productReducer = (state = [], action: IActionStore) => {
         product.id === action.product.id
           ? {...product, quantity: (product.quantity || 0) - 1}
           : product,
+      );
+    case "@cart/changeSize":
+      return state.map((product: IProductCart) =>
+        product.id === action.product.id ? action.product : product,
       );
     default:
       return state;
@@ -53,5 +57,12 @@ export const decrementProduct = (product: IProductCart): IActionStore => {
   return {
     type: "@cart/decrement",
     product: {...product, quantity: (product.quantity || 1) - 1},
+  };
+};
+
+export const changeSizeProduct = (product: IProductCart, size: OptionValues): IActionStore => {
+  return {
+    type: "@cart/changeSize",
+    product: {...product, size},
   };
 };

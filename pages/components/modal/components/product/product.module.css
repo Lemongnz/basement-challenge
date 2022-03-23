@@ -75,10 +75,18 @@
 }
 
 .size button {
-  border-radius: 50%;
   width: 30px;
   text-align: center;
   margin: 0 3px;
+}
+
+.size button.selected {
+  border: solid 1px;
+  border-radius: 50%;
+}
+
+.size h1 {
+  margin-right: 10px;
 }
 
 .focus {
