@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
+import type {NextPage} from "next";
+import {useState} from "react";
 
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import GridProducts from "./components/grid-products";
 import CarouselText from "./components/carousel-text";
-import { useState } from "react";
-import { IProduct } from "./types/product.type";
+import {IProduct} from "./types/product.type";
 import productsService from "./services/products.service";
 
 const Home: NextPage = () => {

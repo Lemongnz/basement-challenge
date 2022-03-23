@@ -1,14 +1,10 @@
-import { IProduct } from "../../../../types/product.type";
+import {IProductsCartParams} from "../../../../types/product.type";
 import Product from "../product/product";
 
-export default function ModalProductsContainer({
-  products,
-}: {
-  products: IProduct[];
-}) {
+export default function ModalProductsContainer({products}: IProductsCartParams) {
   return (
     <div>
-      {products.map((prod: IProduct, index) => (
+      {products.map((prod, index) => (
         <Product key={index} product={prod} />
       ))}
     </div>

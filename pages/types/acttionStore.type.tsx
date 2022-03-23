@@ -1,6 +1,6 @@
-import {IProduct} from "./product.type";
+import {IProductCart} from "./product.type";
 
 export interface IActionStore {
   type: string;
-  product: IProduct;
+  product: IProductCart;
 }

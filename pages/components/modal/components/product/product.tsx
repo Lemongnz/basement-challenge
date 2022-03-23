@@ -1,14 +1,12 @@
 import Image from "next/image";
-import { useDispatch } from "react-redux";
-import {
-  decrementProduct,
-  incrementProduct,
-} from "../../../../reducers/product";
-import { IProduct } from "../../../../types/product.type";
+import {useDispatch} from "react-redux";
+
+import {decrementProduct, incrementProduct} from "../../../../reducers/product";
+import {IProductCartParams} from "../../../../types/product.type";
 
 import style from "./product.module.css";
 
-export default function Product({ product }: { product: IProduct }) {
+export default function Product({product}: IProductCartParams) {
   const dispatch = useDispatch();
 
   const onIncrementProduct = () => {
@@ -22,13 +20,7 @@ export default function Product({ product }: { product: IProduct }) {
   return (
     <div className={style.wrapper}>
       <div className={style.hoodie}>
-        <Image
-          alt="close"
-          className={style.photo}
-          src={product.image}
-          width="226"
-          height="218"
-        />
+        <Image alt="close" className={style.photo} height="218" src={product.image} width="226" />
       </div>
 
       <div className={style.text}>
@@ -42,7 +34,7 @@ export default function Product({ product }: { product: IProduct }) {
               <h1>QUANTITY:</h1>
               <div className={style.quantitydiv}>
                 <button onClick={() => onDerementProduct()}> - </button>
-                <span>{product.total}</span>
+                <span>{product.quantity}</span>
                 <button onClick={() => onIncrementProduct()}> + </button>
               </div>
             </div>

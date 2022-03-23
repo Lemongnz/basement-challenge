@@ -11,11 +11,29 @@ export interface IProduct {
   price: number;
   name: string;
   options: IProductOption[];
-
-  total?: number;
 }
 
 interface IProductOption {
   label: string;
   values: OptionValues[];
+}
+
+export interface IProductCart extends IProduct {
+  quantity: number;
+  size: OptionValues;
+}
+
+export interface IProductParams {
+  product: IProduct;
+}
+
+export interface IProductCartParams {
+  product: IProductCart;
+}
+
+export interface IProductsCartParams {
+  products: IProductCart[];
+}
+export interface IProductsParams {
+  products: IProduct[];
 }

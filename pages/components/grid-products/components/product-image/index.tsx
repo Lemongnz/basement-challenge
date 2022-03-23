@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { useDispatch } from "react-redux";
+import {useDispatch} from "react-redux";
 
-import { addProduct } from "../../../../reducers/product";
+import {addProduct} from "../../../../reducers/product";
+import {IProductParams} from "../../../../types/product.type";
 
 import style from "./product-image.module.css";
 
-import { IProduct } from "../../../../types/product.type";
-
-export default function ProductImage({ product }: { product: IProduct }) {
+export default function ProductImage({product}: IProductParams) {
   const dispatch = useDispatch();
 
   const addProductToCart = () => {
@@ -19,9 +18,9 @@ export default function ProductImage({ product }: { product: IProduct }) {
       <Image
         alt="product"
         className={style.image}
+        height="521.54"
         src={product.image}
         width="424"
-        height="521.54"
       />
     </button>
   );
