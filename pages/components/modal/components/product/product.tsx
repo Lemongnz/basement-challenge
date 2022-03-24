@@ -4,16 +4,10 @@ import {useDispatch} from "react-redux";
 import {
   changeSizeProduct,
   decrementProduct,
-  deleteProduct,
   incrementProduct,
   quantityToZero,
 } from "../../../../reducers/product";
-import {
-  IProduct,
-  IProductCart,
-  IProductCartParams,
-  OptionValues,
-} from "../../../../types/product.type";
+import {IProductCartParams, OptionValues} from "../../../../types/product.type";
 
 import style from "./product.module.css";
 

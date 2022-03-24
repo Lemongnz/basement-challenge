@@ -1,10 +1,10 @@
-import type { NextComponentType } from "next";
+import type {NextComponentType} from "next";
 
 import styles from "./nav-wrapper.module.css";
 
-const NavWrapper: NextComponentType = ({ children }) => {
+const NavWrapper: NextComponentType = ({children}) => {
   return (
-    <div id="nav-wrapper" className={styles.navWrapper}>
+    <div className={styles.navWrapper} id="nav-wrapper">
       {children}
     </div>
   );
