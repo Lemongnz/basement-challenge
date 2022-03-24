@@ -12,14 +12,3 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
-.top {
-  padding: 24px 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.close {
-  margin-bottom: 30px;
-}

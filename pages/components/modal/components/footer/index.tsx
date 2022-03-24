@@ -16,6 +16,7 @@ export default function ModalFooter({products}: IProductsCartParams) {
   };
 
   const onCheckout = () => {
+    // eslint-disable-next-line no-console
     console.table(products);
   };
 
@@ -25,7 +26,7 @@ export default function ModalFooter({products}: IProductsCartParams) {
         <p>TOTAL: ${getTotal()}</p>
       </div>
       <button className={style.right} onClick={onCheckout}>
-        <Image alt="close" src={check} />
+        <Image alt="checkout" src={check} />
       </button>
     </div>
   );

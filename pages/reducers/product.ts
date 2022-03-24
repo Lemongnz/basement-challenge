@@ -66,3 +66,10 @@ export const changeSizeProduct = (product: IProductCart, size: OptionValues): IA
     product: {...product, size},
   };
 };
+
+export const quantityToZero = (product: IProductCart): IActionStore => {
+  return {
+    type: "@cart/delete",
+    product,
+  };
+};

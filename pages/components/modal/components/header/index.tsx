@@ -1,11 +1,13 @@
 import Image from "next/image";
 
-import close from "../../../../../public/yourcart.png";
+import yourcart from "../../../../../public/yourcart.png";
+
+import style from "./your-cart.module.css";
 
 export default function ModalHeader() {
   return (
-    <div>
-      <Image alt="close" src={close} />
+    <div className={style.yourcart}>
+      <Image alt="yourcart" src={yourcart} />
     </div>
   );
 }

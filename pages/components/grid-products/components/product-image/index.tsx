@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {useDispatch} from "react-redux";
 
+import addcart from "../../../../../public/addcart.png";
 import {addProduct} from "../../../../reducers/product";
 import {IProductParams} from "../../../../types/product.type";
 
@@ -22,6 +23,9 @@ export default function ProductImage({product}: IProductParams) {
         src={product.image}
         width="424"
       />
+      <div className={style.imghover}>
+        <Image alt="add to cart" src={addcart} />
+      </div>
     </button>
   );
 }

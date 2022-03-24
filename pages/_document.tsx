@@ -1,12 +1,7 @@
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from "next/document";
-import { Provider } from "react-redux";
-import { store } from "../store";
+import Document, {Html, Head, Main, NextScript, DocumentContext} from "next/document";
+import {Provider} from "react-redux";
+
+import {store} from "../store";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

@@ -1,14 +1,12 @@
-import type { NextComponentType } from "next";
+import type {NextComponentType} from "next";
 import Image from "next/image";
-import { useState } from "react";
-import { Provider } from "react-redux";
-import { store } from "../../../../../store";
+import {useState} from "react";
 
+import {store} from "../../../../../store";
 import Modal from "../../../modal";
 import ModalFooter from "../../../modal/components/footer";
 import ModalHeader from "../../../modal/components/header";
 import ModalProductsContainer from "../../../modal/components/products-container/products-container";
-
 import close from "../../../../../public/Close.png";
 
 import styles from "./nav-button-cart.module.css";
@@ -24,8 +22,8 @@ const NavButtonCart: NextComponentType = () => {
       <button onClick={() => setShowModal(true)}>CART (0)</button>
       {showModal && (
         <Modal>
-          <div>
-            <button onClick={() => setShowModal(false)}>
+          <div className={styles.topside}>
+            <button className={styles.close} onClick={() => setShowModal(false)}>
               <Image alt="close" src={close} />
             </button>
 
