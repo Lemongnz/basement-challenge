@@ -6,7 +6,7 @@ import {
   decrementProduct,
   incrementProduct,
   quantityToZero,
-} from "../../../../reducers/product";
+} from "../../../../../reducers/product";
 import {IProductCartParams, OptionValues} from "../../../../../types/product.type";
 
 import style from "./product.module.css";

@@ -1,5 +1,5 @@
-import {IActionStore} from "../../types/acttionStore.type";
-import {IProduct, IProductCart, OptionValues} from "../../types/product.type";
+import {IActionStore} from "../types/acttionStore.type";
+import {IProduct, IProductCart, OptionValues} from "../types/product.type";
 
 export const productReducer = (state = [], action: IActionStore) => {
   switch (action.type) {
