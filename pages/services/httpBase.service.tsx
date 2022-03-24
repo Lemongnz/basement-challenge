@@ -1,5 +1,4 @@
-// import ITutorialData from "../types/tutorial.type"
-import axios, { AxiosInstance } from "axios";
+import axios, {AxiosInstance} from "axios";
 
 class HttpService {
   http: AxiosInstance;
