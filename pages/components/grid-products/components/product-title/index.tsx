@@ -1,4 +1,4 @@
-import {IProductParams} from "../../../../types/product.type";
+import {IProductParams} from "../../../../../types/product.type";
 
 import style from "./product-title.module.css";
 

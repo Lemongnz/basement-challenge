@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import check from "../../../../../public/checkout.png";
-import {IProductsCartParams} from "../../../../types/product.type";
+import {IProductsCartParams} from "../../../../../types/product.type";
 
 import style from "./modalFooter.module.css";
 export default function ModalFooter({products}: IProductsCartParams) {

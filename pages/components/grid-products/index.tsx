@@ -1,4 +1,4 @@
-import {IProductsParams} from "../../types/product.type";
+import {IProductsParams} from "../../../types/product.type";
 
 import Product from "./components/product/index";
 import style from "./grid-products.module.css";

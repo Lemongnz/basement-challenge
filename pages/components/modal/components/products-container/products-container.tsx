@@ -1,4 +1,4 @@
-import {IProductsCartParams} from "../../../../types/product.type";
+import {IProductsCartParams} from "../../../../../types/product.type";
 import Product from "../product/product";
 
 export default function ModalProductsContainer({products}: IProductsCartParams) {

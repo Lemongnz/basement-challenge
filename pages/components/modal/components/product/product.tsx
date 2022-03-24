@@ -7,7 +7,7 @@ import {
   incrementProduct,
   quantityToZero,
 } from "../../../../reducers/product";
-import {IProductCartParams, OptionValues} from "../../../../types/product.type";
+import {IProductCartParams, OptionValues} from "../../../../../types/product.type";
 
 import style from "./product.module.css";
 

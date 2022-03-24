@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 
 import addcart from "../../../../../public/addcart.png";
 import {addProduct} from "../../../../reducers/product";
-import {IProductParams} from "../../../../types/product.type";
+import {IProductParams} from "../../../../../types/product.type";
 
 import style from "./product-image.module.css";
 
